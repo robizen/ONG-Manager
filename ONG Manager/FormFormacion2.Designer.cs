@@ -32,6 +32,15 @@ namespace ONG_Manager
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.MonthCalendar monthCalendar1;
 		private System.Windows.Forms.ComboBox comboBox2;
+		private System.Windows.Forms.ComboBox comboBox3;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button2;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -72,8 +81,18 @@ namespace ONG_Manager
 			this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
 			this.label3 = new System.Windows.Forms.Label();
 			this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
+			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -136,6 +155,11 @@ namespace ONG_Manager
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.Controls.Add(this.comboBox3);
+			this.groupBox2.Controls.Add(this.label12);
+			this.groupBox2.Controls.Add(this.textBox4);
+			this.groupBox2.Controls.Add(this.label10);
+			this.groupBox2.Controls.Add(this.label11);
 			this.groupBox2.Controls.Add(this.comboBox2);
 			this.groupBox2.Controls.Add(this.label9);
 			this.groupBox2.Controls.Add(this.textBox3);
@@ -194,7 +218,7 @@ namespace ONG_Manager
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(63, 237);
+			this.textBox2.Location = new System.Drawing.Point(57, 238);
 			this.textBox2.MaxLength = 6;
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(74, 20);
@@ -202,7 +226,7 @@ namespace ONG_Manager
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(12, 235);
+			this.label6.Location = new System.Drawing.Point(6, 236);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(64, 23);
 			this.label6.TabIndex = 6;
@@ -211,7 +235,7 @@ namespace ONG_Manager
 			// 
 			// label7
 			// 
-			this.label7.Location = new System.Drawing.Point(12, 236);
+			this.label7.Location = new System.Drawing.Point(6, 237);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(64, 23);
 			this.label7.TabIndex = 7;
@@ -248,19 +272,113 @@ namespace ONG_Manager
 			this.monthCalendar1.Name = "monthCalendar1";
 			this.monthCalendar1.TabIndex = 2;
 			// 
+			// textBox4
+			// 
+			this.textBox4.Location = new System.Drawing.Point(76, 287);
+			this.textBox4.MaxLength = 6;
+			this.textBox4.Name = "textBox4";
+			this.textBox4.Size = new System.Drawing.Size(74, 20);
+			this.textBox4.TabIndex = 16;
+			// 
+			// label10
+			// 
+			this.label10.Location = new System.Drawing.Point(6, 285);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(64, 23);
+			this.label10.TabIndex = 14;
+			this.label10.Text = "SESIONES:";
+			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(6, 286);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(64, 23);
+			this.label11.TabIndex = 15;
+			this.label11.Text = "NOMBRE:";
+			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// comboBox3
+			// 
+			this.comboBox3.FormattingEnabled = true;
+			this.comboBox3.Items.AddRange(new object[] {
+			"NO",
+			"SI"});
+			this.comboBox3.Location = new System.Drawing.Point(519, 286);
+			this.comboBox3.Name = "comboBox3";
+			this.comboBox3.Size = new System.Drawing.Size(121, 21);
+			this.comboBox3.TabIndex = 18;
+			// 
+			// label12
+			// 
+			this.label12.Location = new System.Drawing.Point(432, 284);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(89, 23);
+			this.label12.TabIndex = 17;
+			this.label12.Text = "COMPLETADO:";
+			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.textBox5);
+			this.groupBox3.Location = new System.Drawing.Point(40, 473);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(640, 152);
+			this.groupBox3.TabIndex = 3;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "OBSERVACIONES:";
+			// 
+			// textBox5
+			// 
+			this.textBox5.AcceptsReturn = true;
+			this.textBox5.Location = new System.Drawing.Point(6, 29);
+			this.textBox5.Multiline = true;
+			this.textBox5.Name = "textBox5";
+			this.textBox5.Size = new System.Drawing.Size(622, 104);
+			this.textBox5.TabIndex = 0;
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(447, 640);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(99, 23);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "ACEPTAR";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(581, 640);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(99, 23);
+			this.button2.TabIndex = 5;
+			this.button2.Text = "CANCELAR";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// FormFormacion2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 761);
+			this.ControlBox = false;
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "FormFormacion2";
+			this.ShowIcon = false;
+			this.ShowInTaskbar = false;
 			this.Text = "FormFormacion2";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 
 		}

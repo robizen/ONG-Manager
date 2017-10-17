@@ -30,15 +30,25 @@ namespace ONG_Manager
 		}
 		void UsuarioToolStripMenuItemClick(object sender, EventArgs e)
 		{
+			Limpiarforms();
 			FormUsuario1 userform1 = new FormUsuario1();
 			userform1.MdiParent = this;
 			userform1.Show();
 		}
 		void FormaciónToolStripMenuItemClick(object sender, EventArgs e)
 		{
+			Limpiarforms();
 			FormFormacion1 formacionform1 = new FormFormacion1();
 			formacionform1.MdiParent = this;
 			formacionform1.Show();
+		}
+		
+		void Limpiarforms()
+		{
+			if (this.MdiChildren.Length > 0)
+			{
+				this.ActiveMdiChild.Close();
+			}
 		}
 	}
 }

@@ -32,6 +32,7 @@ namespace ONG_Manager
 		{
 			FormFormacion2 formCurso = new FormFormacion2();
 			formCurso.MdiParent = this.MdiParent;
+			this.Close();
 			formCurso.Show();
 		}
 	}
