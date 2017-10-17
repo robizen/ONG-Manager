@@ -28,5 +28,11 @@ namespace ONG_Manager
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void Button1Click(object sender, EventArgs e)
+		{
+			FormFormacion2 formCurso = new FormFormacion2();
+			formCurso.MdiParent = this.MdiParent;
+			formCurso.Show();
+		}
 	}
 }
