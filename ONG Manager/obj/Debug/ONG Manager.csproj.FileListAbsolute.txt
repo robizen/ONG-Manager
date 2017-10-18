@@ -20,3 +20,4 @@ C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG Manager.csproj.GenerateResource.Cache
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG Manager.exe
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG Manager.pdb
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormFormacion2.resources

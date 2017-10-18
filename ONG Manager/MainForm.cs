@@ -31,7 +31,13 @@ namespace ONG_Manager
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
+			CargarMenu();
+		}
+		
+		void CargarMenu()
+		{
 			FormMenu Menuform = new FormMenu();
+			this.Hide();
 			Menuform.Show();
 		}
 	}

@@ -70,6 +70,11 @@ namespace ONG_Manager
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.textBox3 = new System.Windows.Forms.TextBox();
@@ -81,11 +86,6 @@ namespace ONG_Manager
 			this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
 			this.label3 = new System.Windows.Forms.Label();
 			this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.label12 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
@@ -176,6 +176,52 @@ namespace ONG_Manager
 			this.groupBox2.Size = new System.Drawing.Size(646, 333);
 			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
+			// 
+			// comboBox3
+			// 
+			this.comboBox3.FormattingEnabled = true;
+			this.comboBox3.Items.AddRange(new object[] {
+			"NO",
+			"SI"});
+			this.comboBox3.Location = new System.Drawing.Point(519, 286);
+			this.comboBox3.Name = "comboBox3";
+			this.comboBox3.Size = new System.Drawing.Size(121, 21);
+			this.comboBox3.TabIndex = 18;
+			// 
+			// label12
+			// 
+			this.label12.Location = new System.Drawing.Point(432, 284);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(89, 23);
+			this.label12.TabIndex = 17;
+			this.label12.Text = "COMPLETADO:";
+			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// textBox4
+			// 
+			this.textBox4.Location = new System.Drawing.Point(76, 287);
+			this.textBox4.MaxLength = 6;
+			this.textBox4.Name = "textBox4";
+			this.textBox4.Size = new System.Drawing.Size(74, 20);
+			this.textBox4.TabIndex = 16;
+			// 
+			// label10
+			// 
+			this.label10.Location = new System.Drawing.Point(6, 285);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(64, 23);
+			this.label10.TabIndex = 14;
+			this.label10.Text = "SESIONES:";
+			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(6, 286);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(64, 23);
+			this.label11.TabIndex = 15;
+			this.label11.Text = "NOMBRE:";
+			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// comboBox2
 			// 
@@ -272,52 +318,6 @@ namespace ONG_Manager
 			this.monthCalendar1.Name = "monthCalendar1";
 			this.monthCalendar1.TabIndex = 2;
 			// 
-			// textBox4
-			// 
-			this.textBox4.Location = new System.Drawing.Point(76, 287);
-			this.textBox4.MaxLength = 6;
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(74, 20);
-			this.textBox4.TabIndex = 16;
-			// 
-			// label10
-			// 
-			this.label10.Location = new System.Drawing.Point(6, 285);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(64, 23);
-			this.label10.TabIndex = 14;
-			this.label10.Text = "SESIONES:";
-			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label11
-			// 
-			this.label11.Location = new System.Drawing.Point(6, 286);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(64, 23);
-			this.label11.TabIndex = 15;
-			this.label11.Text = "NOMBRE:";
-			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// comboBox3
-			// 
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Items.AddRange(new object[] {
-			"NO",
-			"SI"});
-			this.comboBox3.Location = new System.Drawing.Point(519, 286);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(121, 21);
-			this.comboBox3.TabIndex = 18;
-			// 
-			// label12
-			// 
-			this.label12.Location = new System.Drawing.Point(432, 284);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(89, 23);
-			this.label12.TabIndex = 17;
-			this.label12.Text = "COMPLETADO:";
-			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.textBox5);
@@ -339,7 +339,7 @@ namespace ONG_Manager
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(447, 640);
+			this.button1.Location = new System.Drawing.Point(447, 643);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(99, 23);
 			this.button1.TabIndex = 4;
@@ -348,7 +348,7 @@ namespace ONG_Manager
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(581, 640);
+			this.button2.Location = new System.Drawing.Point(581, 643);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(99, 23);
 			this.button2.TabIndex = 5;
