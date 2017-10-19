@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data.OleDb; //DATASBASE ACCESS
 
 namespace ONG_Manager
 {
@@ -18,12 +19,17 @@ namespace ONG_Manager
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		string strcon = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=ONGMANAGER.mdb;Persist Security Info=True";
 		public MainForm()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			OleDbConnection conn = new OleDbConnection(strcon);
+  			conn.Open();
+  			MessageBox.Show(conn.State.ToString());
+  			conn.Close();
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.

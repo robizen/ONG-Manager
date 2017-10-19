@@ -10,6 +10,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace ONG_Manager
 {
 	/// <summary>
@@ -17,6 +18,7 @@ namespace ONG_Manager
 	/// </summary>
 	public partial class FormFormacion2 : Form
 	{
+		
 		public FormFormacion2()
 		{
 			//
@@ -24,7 +26,9 @@ namespace ONG_Manager
 			//
 			InitializeComponent();
 			
-			//
+			
+			 
+				//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
