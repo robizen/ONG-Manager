@@ -21,6 +21,7 @@ namespace ONG_Manager
 	{
 		string strcon = "Data Source=ONGMANAGER.db;Version=3;";
 		string sql;
+		string nomcurso;
 		
 		public FormFormacion1()
 		{
@@ -39,7 +40,7 @@ namespace ONG_Manager
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			FormFormacion2 formCurso = new FormFormacion2();
+			FormFormacion2 formCurso = new FormFormacion2(nomcurso);
 			formCurso.MdiParent = this.MdiParent;
 			this.Close();
 			formCurso.Show();
@@ -71,6 +72,27 @@ namespace ONG_Manager
         	
   			conn.Close();
 		}
+
+		void Button8Click(object sender, EventArgs e)
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select ALUMNOS.ID, ALUMNOS.NOMBRE,ALUMNOS.APELLIDO1,ALUMNOS.APELLIDO2,ALUMNOS.NIF from ALUMNOS INNER JOIN ALUMNOSCURSO ON ALUMNOSCURSO.IDALUMNO = ALUMNOS.ID WHERE ALUMNOSCURSO.IDCURSO = '"+dgridcursos.SelectedRows[0].Cells[0].Value.ToString()+"';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			SQLiteDataAdapter da3 = new SQLiteDataAdapter(cmd);
+        	DataTable dt3 = new DataTable();
+        	da3.Fill(dt3);
+        	dgridalumnoscurso.DataSource = dt3;
+		}
+		void Button2Click(object sender, EventArgs e)
+		{
+			nomcurso = dgridcursos.SelectedRows[0].Cells[2].Value.ToString();
+			FormFormacion2 formCurso = new FormFormacion2(nomcurso);
+			formCurso.MdiParent = this.MdiParent;
+			this.Close();
+			formCurso.Show();
+		}
+		
 		
 		
 		

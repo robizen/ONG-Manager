@@ -173,6 +173,7 @@ namespace ONG_Manager
 			this.button8.TabIndex = 35;
 			this.button8.Text = "VER ASISTENTES";
 			this.button8.UseVisualStyleBackColor = true;
+			this.button8.Click += new System.EventHandler(this.Button8Click);
 			// 
 			// button7
 			// 
@@ -191,6 +192,7 @@ namespace ONG_Manager
 			this.dgridalumnoscurso.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.dgridalumnoscurso.Location = new System.Drawing.Point(9, 55);
 			this.dgridalumnoscurso.Name = "dgridalumnoscurso";
+			this.dgridalumnoscurso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgridalumnoscurso.Size = new System.Drawing.Size(742, 183);
 			this.dgridalumnoscurso.TabIndex = 33;
 			// 
@@ -234,6 +236,7 @@ namespace ONG_Manager
 			this.button2.TabIndex = 30;
 			this.button2.Text = "MODIFICAR";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// button1
 			// 
@@ -252,7 +255,9 @@ namespace ONG_Manager
 			this.dgridcursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgridcursos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.dgridcursos.Location = new System.Drawing.Point(9, 51);
+			this.dgridcursos.MultiSelect = false;
 			this.dgridcursos.Name = "dgridcursos";
+			this.dgridcursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgridcursos.Size = new System.Drawing.Size(726, 193);
 			this.dgridcursos.TabIndex = 28;
 			// 
