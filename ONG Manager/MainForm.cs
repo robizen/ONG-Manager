@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Data.OleDb; //DATASBASE ACCESS
+using System.Data.SQLite;
 
 namespace ONG_Manager
 {
@@ -19,17 +20,15 @@ namespace ONG_Manager
 	/// </summary>
 	public partial class MainForm : Form
 	{
-		string strcon = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=ONGMANAGER.mdb;Persist Security Info=True";
+		string strcon = "Data Source=ONGMANAGER.db;Version=3;";
+		string sql;
+		int perfil = 0;
 		public MainForm()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			OleDbConnection conn = new OleDbConnection(strcon);
-  			conn.Open();
-  			MessageBox.Show(conn.State.ToString());
-  			conn.Close();
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
@@ -37,14 +36,31 @@ namespace ONG_Manager
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
-			CargarMenu();
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select PERFIL from USERS where USUARIO ='"+textBox1.Text+"' and PASSWORD = '"+textBox2.Text+"';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			perfil = Convert.ToInt16(cmd.ExecuteScalar());
+  			conn.Close();
+  			CargarMenu();
 		}
 		
 		void CargarMenu()
 		{
-			FormMenu Menuform = new FormMenu();
-			this.Hide();
-			Menuform.Show();
+			if (perfil == 0)
+			{
+				MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTO","ERROR DE ACCESO");
+			}else
+			{
+				FormMenu Menuform = new FormMenu(perfil);
+				this.Hide();
+				Menuform.Show();
+			}
+		}
+		void Button2Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+			
 		}
 	}
 }

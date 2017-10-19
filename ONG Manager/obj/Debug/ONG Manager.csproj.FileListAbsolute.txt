@@ -21,3 +21,11 @@ C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG Manager.exe
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG Manager.pdb
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormFormacion2.resources
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\EntityFramework.dll
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\System.Data.SQLite.dll
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\EntityFramework.xml
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\System.Data.SQLite.xml

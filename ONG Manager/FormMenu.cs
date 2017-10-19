@@ -17,13 +17,13 @@ namespace ONG_Manager
 	/// </summary>
 	public partial class FormMenu : Form
 	{
-		public FormMenu()
+		public FormMenu(int perfil)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+			MessageBox.Show(perfil.ToString());
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
