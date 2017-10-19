@@ -14,11 +14,11 @@ namespace ONG_Manager
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgridcursos;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.DataGridView dataGridView2;
+		private System.Windows.Forms.DataGridView dgridalumnoscurso;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button7;
 		private System.Windows.Forms.Button button8;
@@ -37,6 +37,18 @@ namespace ONG_Manager
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.GroupBox groupBox4;
+		private System.Windows.Forms.DataGridView dgridalumnos;
+		private System.Windows.Forms.GroupBox groupBox5;
+		private System.Windows.Forms.Button button17;
+		private System.Windows.Forms.Button button13;
+		private System.Windows.Forms.Button button14;
+		private System.Windows.Forms.Button button15;
+		private System.Windows.Forms.Button button16;
+		private System.Windows.Forms.Button button12;
+		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.DataGridView dgridprofesores;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -65,13 +77,13 @@ namespace ONG_Manager
 			this.button9 = new System.Windows.Forms.Button();
 			this.button8 = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
-			this.dataGridView2 = new System.Windows.Forms.DataGridView();
+			this.dgridalumnoscurso = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgridcursos = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.button11 = new System.Windows.Forms.Button();
 			this.button10 = new System.Windows.Forms.Button();
@@ -82,13 +94,30 @@ namespace ONG_Manager
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.groupBox5 = new System.Windows.Forms.GroupBox();
+			this.button17 = new System.Windows.Forms.Button();
+			this.button13 = new System.Windows.Forms.Button();
+			this.button14 = new System.Windows.Forms.Button();
+			this.button15 = new System.Windows.Forms.Button();
+			this.dgridprofesores = new System.Windows.Forms.DataGridView();
+			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.button16 = new System.Windows.Forms.Button();
+			this.button12 = new System.Windows.Forms.Button();
+			this.button6 = new System.Windows.Forms.Button();
+			this.button5 = new System.Windows.Forms.Button();
+			this.dgridalumnos = new System.Windows.Forms.DataGridView();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.groupBox3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgridalumnoscurso)).BeginInit();
 			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgridcursos)).BeginInit();
 			this.groupBox1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
+			this.groupBox5.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgridprofesores)).BeginInit();
+			this.groupBox4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgridalumnos)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -119,7 +148,7 @@ namespace ONG_Manager
 			this.groupBox3.Controls.Add(this.button9);
 			this.groupBox3.Controls.Add(this.button8);
 			this.groupBox3.Controls.Add(this.button7);
-			this.groupBox3.Controls.Add(this.dataGridView2);
+			this.groupBox3.Controls.Add(this.dgridalumnoscurso);
 			this.groupBox3.Location = new System.Drawing.Point(9, 434);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(758, 251);
@@ -151,16 +180,19 @@ namespace ONG_Manager
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(144, 23);
 			this.button7.TabIndex = 34;
-			this.button7.Text = "AÑADIR FICHA";
+			this.button7.Text = "ASIGNAR ALUMNOS";
 			this.button7.UseVisualStyleBackColor = true;
 			// 
-			// dataGridView2
+			// dgridalumnoscurso
 			// 
-			this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView2.Location = new System.Drawing.Point(9, 55);
-			this.dataGridView2.Name = "dataGridView2";
-			this.dataGridView2.Size = new System.Drawing.Size(742, 183);
-			this.dataGridView2.TabIndex = 33;
+			this.dgridalumnoscurso.AllowUserToAddRows = false;
+			this.dgridalumnoscurso.AllowUserToDeleteRows = false;
+			this.dgridalumnoscurso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgridalumnoscurso.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.dgridalumnoscurso.Location = new System.Drawing.Point(9, 55);
+			this.dgridalumnoscurso.Name = "dgridalumnoscurso";
+			this.dgridalumnoscurso.Size = new System.Drawing.Size(742, 183);
+			this.dgridalumnoscurso.TabIndex = 33;
 			// 
 			// groupBox2
 			// 
@@ -168,7 +200,7 @@ namespace ONG_Manager
 			this.groupBox2.Controls.Add(this.button3);
 			this.groupBox2.Controls.Add(this.button2);
 			this.groupBox2.Controls.Add(this.button1);
-			this.groupBox2.Controls.Add(this.dataGridView1);
+			this.groupBox2.Controls.Add(this.dgridcursos);
 			this.groupBox2.Location = new System.Drawing.Point(10, 27);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(759, 250);
@@ -213,13 +245,16 @@ namespace ONG_Manager
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
-			// dataGridView1
+			// dgridcursos
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(9, 51);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(726, 193);
-			this.dataGridView1.TabIndex = 28;
+			this.dgridcursos.AllowUserToAddRows = false;
+			this.dgridcursos.AllowUserToDeleteRows = false;
+			this.dgridcursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgridcursos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.dgridcursos.Location = new System.Drawing.Point(9, 51);
+			this.dgridcursos.Name = "dgridcursos";
+			this.dgridcursos.Size = new System.Drawing.Size(726, 193);
+			this.dgridcursos.TabIndex = 28;
 			// 
 			// groupBox1
 			// 
@@ -309,12 +344,137 @@ namespace ONG_Manager
 			// tabPage2
 			// 
 			this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+			this.tabPage2.Controls.Add(this.groupBox5);
+			this.tabPage2.Controls.Add(this.groupBox4);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage2.Size = new System.Drawing.Size(952, 691);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "ALUMNOS / PROFESORADO";
+			// 
+			// groupBox5
+			// 
+			this.groupBox5.Controls.Add(this.button17);
+			this.groupBox5.Controls.Add(this.button13);
+			this.groupBox5.Controls.Add(this.button14);
+			this.groupBox5.Controls.Add(this.button15);
+			this.groupBox5.Controls.Add(this.dgridprofesores);
+			this.groupBox5.Location = new System.Drawing.Point(3, 320);
+			this.groupBox5.Name = "groupBox5";
+			this.groupBox5.Size = new System.Drawing.Size(940, 290);
+			this.groupBox5.TabIndex = 4;
+			this.groupBox5.TabStop = false;
+			this.groupBox5.Text = "PROFESORES";
+			// 
+			// button17
+			// 
+			this.button17.Location = new System.Drawing.Point(624, 249);
+			this.button17.Name = "button17";
+			this.button17.Size = new System.Drawing.Size(200, 23);
+			this.button17.TabIndex = 5;
+			this.button17.Text = "CONVERTIR EN ALUMNO";
+			this.button17.UseVisualStyleBackColor = true;
+			// 
+			// button13
+			// 
+			this.button13.Location = new System.Drawing.Point(418, 249);
+			this.button13.Name = "button13";
+			this.button13.Size = new System.Drawing.Size(200, 23);
+			this.button13.TabIndex = 3;
+			this.button13.Text = "ASIGNAR CURSOS";
+			this.button13.UseVisualStyleBackColor = true;
+			// 
+			// button14
+			// 
+			this.button14.Location = new System.Drawing.Point(212, 249);
+			this.button14.Name = "button14";
+			this.button14.Size = new System.Drawing.Size(200, 23);
+			this.button14.TabIndex = 2;
+			this.button14.Text = "EDITAR DATOS DEL PROFESOR";
+			this.button14.UseVisualStyleBackColor = true;
+			// 
+			// button15
+			// 
+			this.button15.Location = new System.Drawing.Point(6, 249);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(200, 23);
+			this.button15.TabIndex = 1;
+			this.button15.Text = "AÑADIR NUEVO PROFESOR";
+			this.button15.UseVisualStyleBackColor = true;
+			// 
+			// dgridprofesores
+			// 
+			this.dgridprofesores.AllowUserToAddRows = false;
+			this.dgridprofesores.AllowUserToDeleteRows = false;
+			this.dgridprofesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgridprofesores.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.dgridprofesores.Location = new System.Drawing.Point(6, 19);
+			this.dgridprofesores.Name = "dgridprofesores";
+			this.dgridprofesores.Size = new System.Drawing.Size(928, 214);
+			this.dgridprofesores.TabIndex = 0;
+			// 
+			// groupBox4
+			// 
+			this.groupBox4.Controls.Add(this.button16);
+			this.groupBox4.Controls.Add(this.button12);
+			this.groupBox4.Controls.Add(this.button6);
+			this.groupBox4.Controls.Add(this.button5);
+			this.groupBox4.Controls.Add(this.dgridalumnos);
+			this.groupBox4.Location = new System.Drawing.Point(6, 6);
+			this.groupBox4.Name = "groupBox4";
+			this.groupBox4.Size = new System.Drawing.Size(940, 290);
+			this.groupBox4.TabIndex = 0;
+			this.groupBox4.TabStop = false;
+			this.groupBox4.Text = "ALUMNOS";
+			// 
+			// button16
+			// 
+			this.button16.Location = new System.Drawing.Point(624, 249);
+			this.button16.Name = "button16";
+			this.button16.Size = new System.Drawing.Size(200, 23);
+			this.button16.TabIndex = 4;
+			this.button16.Text = "CONVERTIR EN PROFESOR";
+			this.button16.UseVisualStyleBackColor = true;
+			// 
+			// button12
+			// 
+			this.button12.Location = new System.Drawing.Point(418, 249);
+			this.button12.Name = "button12";
+			this.button12.Size = new System.Drawing.Size(200, 23);
+			this.button12.TabIndex = 3;
+			this.button12.Text = "ASIGNAR CURSOS";
+			this.button12.UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this.button6.Location = new System.Drawing.Point(212, 249);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(200, 23);
+			this.button6.TabIndex = 2;
+			this.button6.Text = "EDITAR DATOS DEL ALUMNO";
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this.button5.Location = new System.Drawing.Point(6, 249);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(200, 23);
+			this.button5.TabIndex = 1;
+			this.button5.Text = "AÑADIR NUEVO ALUMNO";
+			this.button5.UseVisualStyleBackColor = true;
+			this.button5.Click += new System.EventHandler(this.Button5Click);
+			// 
+			// dgridalumnos
+			// 
+			this.dgridalumnos.AllowUserToAddRows = false;
+			this.dgridalumnos.AllowUserToDeleteRows = false;
+			this.dgridalumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgridalumnos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.dgridalumnos.Location = new System.Drawing.Point(6, 19);
+			this.dgridalumnos.Name = "dgridalumnos";
+			this.dgridalumnos.Size = new System.Drawing.Size(928, 214);
+			this.dgridalumnos.TabIndex = 0;
 			// 
 			// FormFormacion1
 			// 
@@ -333,11 +493,16 @@ namespace ONG_Manager
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.groupBox3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgridalumnoscurso)).EndInit();
 			this.groupBox2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgridcursos)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.tabPage2.ResumeLayout(false);
+			this.groupBox5.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgridprofesores)).EndInit();
+			this.groupBox4.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgridalumnos)).EndInit();
 			this.ResumeLayout(false);
 
 		}

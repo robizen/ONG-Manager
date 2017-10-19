@@ -10,8 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Data.OleDb; //DATASBASE ACCESS
-using System.Data.SQLite;
+//using System.Data.OleDb; //DATASBASE ACCESS ** Ahora se usa SQLite en su lugar
+using System.Data.SQLite; // CONEXION DDBB
 
 namespace ONG_Manager
 {
@@ -53,13 +53,21 @@ namespace ONG_Manager
 			}else
 			{
 				FormMenu Menuform = new FormMenu(perfil);
-				this.Hide();
+				this.Close();
 				Menuform.Show();
 			}
 		}
+		
+		void debug()
+		{
+			FormMenu Menuform = new FormMenu(perfil);
+				this.Hide();
+				Menuform.Show();
+		}
 		void Button2Click(object sender, EventArgs e)
 		{
-			Application.Exit();
+			// Application.Exit(); // debug test
+			debug();
 			
 		}
 	}

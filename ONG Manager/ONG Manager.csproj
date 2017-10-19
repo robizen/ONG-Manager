@@ -66,6 +66,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAlumnos1.cs" />
+    <Compile Include="FormAlumnos1.Designer.cs">
+      <DependentUpon>FormAlumnos1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlumnos2.cs" />
+    <Compile Include="FormAlumnos2.Designer.cs">
+      <DependentUpon>FormAlumnos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFormacion1.cs" />
     <Compile Include="FormFormacion1.Designer.cs">
       <DependentUpon>FormFormacion1.cs</DependentUpon>
@@ -94,6 +102,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormAlumnos1.resx">
+      <DependentUpon>FormAlumnos1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlumnos2.resx">
+      <DependentUpon>FormAlumnos2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFormacion1.resx">
       <DependentUpon>FormFormacion1.cs</DependentUpon>
     </EmbeddedResource>
