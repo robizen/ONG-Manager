@@ -31,3 +31,25 @@ C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\bin\Debug\System.Data.SQLite.xml
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormAlumnos1.resources
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormAlumnos2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\ONG Manager.exe.config
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\ONG Manager.exe
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\ONG Manager.pdb
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\EntityFramework.dll
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\EntityFramework.SqlServer.dll
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\System.Data.SQLite.dll
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\System.Data.SQLite.EF6.dll
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\System.Data.SQLite.Linq.dll
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\EntityFramework.xml
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\EntityFramework.SqlServer.xml
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\bin\Debug\System.Data.SQLite.xml
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.csprojResolveAssemblyReference.cache
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormAlumnos1.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormAlumnos2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormFormacion1.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormFormacion2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormMenu.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormUsuario1.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.MainForm.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.csproj.GenerateResource.Cache
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.exe
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.pdb
