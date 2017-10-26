@@ -389,6 +389,7 @@ namespace ONG_Manager
 			this.button13.TabIndex = 3;
 			this.button13.Text = "ASIGNAR CURSOS";
 			this.button13.UseVisualStyleBackColor = true;
+			this.button13.Click += new System.EventHandler(this.Button13Click);
 			// 
 			// button14
 			// 
@@ -407,6 +408,7 @@ namespace ONG_Manager
 			this.button15.TabIndex = 1;
 			this.button15.Text = "AÑADIR NUEVO PROFESOR";
 			this.button15.UseVisualStyleBackColor = true;
+			this.button15.Click += new System.EventHandler(this.Button15Click);
 			// 
 			// dgridprofesores
 			// 
@@ -415,7 +417,9 @@ namespace ONG_Manager
 			this.dgridprofesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgridprofesores.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.dgridprofesores.Location = new System.Drawing.Point(6, 19);
+			this.dgridprofesores.MultiSelect = false;
 			this.dgridprofesores.Name = "dgridprofesores";
+			this.dgridprofesores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgridprofesores.Size = new System.Drawing.Size(928, 214);
 			this.dgridprofesores.TabIndex = 0;
 			// 
@@ -459,6 +463,7 @@ namespace ONG_Manager
 			this.button6.TabIndex = 2;
 			this.button6.Text = "EDITAR DATOS DEL ALUMNO";
 			this.button6.UseVisualStyleBackColor = true;
+			this.button6.Click += new System.EventHandler(this.Button6Click);
 			// 
 			// button5
 			// 
@@ -477,7 +482,9 @@ namespace ONG_Manager
 			this.dgridalumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgridalumnos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.dgridalumnos.Location = new System.Drawing.Point(6, 19);
+			this.dgridalumnos.MultiSelect = false;
 			this.dgridalumnos.Name = "dgridalumnos";
+			this.dgridalumnos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgridalumnos.Size = new System.Drawing.Size(928, 214);
 			this.dgridalumnos.TabIndex = 0;
 			// 

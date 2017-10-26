@@ -63,12 +63,19 @@ namespace ONG_Manager
         	DataTable dt1 = new DataTable();
         	da1.Fill(dt1);
         	dgridcursos.DataSource = dt1;
+        	
         	sql = "select * from ALUMNOS;";
         	cmd = new SQLiteCommand(sql, conn);
         	SQLiteDataAdapter da2 = new SQLiteDataAdapter(cmd);
         	DataTable dt2 = new DataTable();
         	da2.Fill(dt2);
         	dgridalumnos.DataSource = dt2;
+        	sql = "select * from PROFESORES;";
+        	cmd = new SQLiteCommand(sql, conn);
+        	SQLiteDataAdapter da3 = new SQLiteDataAdapter(cmd);
+        	DataTable dt3 = new DataTable();
+        	da3.Fill(dt3);
+        	dgridprofesores.DataSource = dt3;
         	
   			conn.Close();
 		}
@@ -91,6 +98,24 @@ namespace ONG_Manager
 			formCurso.MdiParent = this.MdiParent;
 			this.Close();
 			formCurso.Show();
+		}
+		void Button15Click(object sender, EventArgs e)
+		{
+			FormProfesores1 formprofesor = new FormProfesores1();
+			formprofesor.MdiParent = this.MdiParent;
+			this.Close();
+			formprofesor.Show();
+		}
+		void Button6Click(object sender, EventArgs e)
+		{
+			
+		}
+		void Button13Click(object sender, EventArgs e)
+		{	
+			FormProfesores2 formaProfeCursos = new FormProfesores2(dgridprofesores.SelectedRows[0].Cells[0].Value.ToString(),dgridprofesores.SelectedRows[0].Cells[2].Value.ToString(),dgridprofesores.SelectedRows[0].Cells[3].Value.ToString(),dgridprofesores.SelectedRows[0].Cells[1].Value.ToString(),dgridprofesores.SelectedRows[0].Cells[4].Value.ToString());
+			formaProfeCursos.MdiParent = this.MdiParent;
+			this.Close();
+			formaProfeCursos.Show();
 		}
 		
 		

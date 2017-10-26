@@ -86,6 +86,14 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProfesores1.cs" />
+    <Compile Include="FormProfesores1.Designer.cs">
+      <DependentUpon>FormProfesores1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfesores2.cs" />
+    <Compile Include="FormProfesores2.Designer.cs">
+      <DependentUpon>FormProfesores2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUsuario1.cs" />
     <Compile Include="FormUsuario1.Designer.cs">
       <DependentUpon>FormUsuario1.cs</DependentUpon>
@@ -116,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfesores1.resx">
+      <DependentUpon>FormProfesores1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfesores2.resx">
+      <DependentUpon>FormProfesores2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario1.resx">
       <DependentUpon>FormUsuario1.cs</DependentUpon>
