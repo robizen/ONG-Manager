@@ -55,3 +55,6 @@ X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.exe
 X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG Manager.pdb
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormProfesores1.resources
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormProfesores2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormProfesores1.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormProfesores2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormArmario1.resources

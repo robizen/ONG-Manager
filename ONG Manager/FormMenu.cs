@@ -30,9 +30,9 @@ namespace ONG_Manager
 		void UsuarioToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			Limpiarforms();
-			FormUsuario1 userform1 = new FormUsuario1();
-			userform1.MdiParent = this;
-			userform1.Show();
+			FormArmario1 armarioform1 = new FormArmario1();
+			armarioform1.MdiParent = this;
+			armarioform1.Show();
 		}
 		void FormaciónToolStripMenuItemClick(object sender, EventArgs e)
 		{

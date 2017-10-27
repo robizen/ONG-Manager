@@ -21,7 +21,6 @@ namespace ONG_Manager
 		private System.Windows.Forms.DataGridView dgridalumnoscurso;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button7;
-		private System.Windows.Forms.Button button8;
 		private System.Windows.Forms.Button button9;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button button11;
@@ -49,6 +48,24 @@ namespace ONG_Manager
 		private System.Windows.Forms.Button button6;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.DataGridView dgridprofesores;
+		private System.Windows.Forms.GroupBox groupBox6;
+		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.Button button18;
+		private System.Windows.Forms.TextBox tbapellidoalumno;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.GroupBox groupBox7;
+		private System.Windows.Forms.TextBox tbidprofesor;
+		private System.Windows.Forms.TextBox tbdniprofesor;
+		private System.Windows.Forms.Button button19;
+		private System.Windows.Forms.Button button20;
+		private System.Windows.Forms.TextBox tbapellidoprofesor;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.TextBox tbidalumno;
+		private System.Windows.Forms.TextBox tbdnialumno;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -75,7 +92,6 @@ namespace ONG_Manager
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.button9 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
 			this.dgridalumnoscurso = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -94,6 +110,24 @@ namespace ONG_Manager
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.groupBox7 = new System.Windows.Forms.GroupBox();
+			this.tbidprofesor = new System.Windows.Forms.TextBox();
+			this.tbdniprofesor = new System.Windows.Forms.TextBox();
+			this.button19 = new System.Windows.Forms.Button();
+			this.button20 = new System.Windows.Forms.Button();
+			this.tbapellidoprofesor = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.groupBox6 = new System.Windows.Forms.GroupBox();
+			this.tbidalumno = new System.Windows.Forms.TextBox();
+			this.tbdnialumno = new System.Windows.Forms.TextBox();
+			this.button8 = new System.Windows.Forms.Button();
+			this.button18 = new System.Windows.Forms.Button();
+			this.tbapellidoalumno = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
 			this.button17 = new System.Windows.Forms.Button();
 			this.button13 = new System.Windows.Forms.Button();
@@ -114,6 +148,8 @@ namespace ONG_Manager
 			((System.ComponentModel.ISupportInitialize)(this.dgridcursos)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
+			this.groupBox7.SuspendLayout();
+			this.groupBox6.SuspendLayout();
 			this.groupBox5.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgridprofesores)).BeginInit();
 			this.groupBox4.SuspendLayout();
@@ -127,7 +163,7 @@ namespace ONG_Manager
 			this.tabControl1.Location = new System.Drawing.Point(12, 2);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(960, 717);
+			this.tabControl1.Size = new System.Drawing.Size(960, 747);
 			this.tabControl1.TabIndex = 22;
 			// 
 			// tabPage1
@@ -139,14 +175,13 @@ namespace ONG_Manager
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(952, 691);
+			this.tabPage1.Size = new System.Drawing.Size(952, 721);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "CURSOS";
 			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.button9);
-			this.groupBox3.Controls.Add(this.button8);
 			this.groupBox3.Controls.Add(this.button7);
 			this.groupBox3.Controls.Add(this.dgridalumnoscurso);
 			this.groupBox3.Location = new System.Drawing.Point(9, 434);
@@ -158,22 +193,12 @@ namespace ONG_Manager
 			// 
 			// button9
 			// 
-			this.button9.Location = new System.Drawing.Point(344, 26);
+			this.button9.Location = new System.Drawing.Point(172, 26);
 			this.button9.Name = "button9";
 			this.button9.Size = new System.Drawing.Size(177, 23);
 			this.button9.TabIndex = 36;
 			this.button9.Text = "HOJA DE FIRMAS";
 			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this.button8.Location = new System.Drawing.Point(161, 26);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(177, 23);
-			this.button8.TabIndex = 35;
-			this.button8.Text = "VER ASISTENTES";
-			this.button8.UseVisualStyleBackColor = true;
-			this.button8.Click += new System.EventHandler(this.Button8Click);
 			// 
 			// button7
 			// 
@@ -260,6 +285,7 @@ namespace ONG_Manager
 			this.dgridcursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgridcursos.Size = new System.Drawing.Size(726, 193);
 			this.dgridcursos.TabIndex = 28;
+			this.dgridcursos.Click += new System.EventHandler(this.DgridcursosClick);
 			// 
 			// groupBox1
 			// 
@@ -276,7 +302,7 @@ namespace ONG_Manager
 			this.groupBox1.Size = new System.Drawing.Size(759, 100);
 			this.groupBox1.TabIndex = 34;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "BUSCAR DE CURSOS";
+			this.groupBox1.Text = "BUSCAR CURSOS";
 			// 
 			// button11
 			// 
@@ -286,6 +312,7 @@ namespace ONG_Manager
 			this.button11.TabIndex = 28;
 			this.button11.Text = "CANCELAR";
 			this.button11.UseVisualStyleBackColor = true;
+			this.button11.Click += new System.EventHandler(this.Button11Click);
 			// 
 			// button10
 			// 
@@ -295,6 +322,7 @@ namespace ONG_Manager
 			this.button10.TabIndex = 27;
 			this.button10.Text = "ACEPTAR";
 			this.button10.UseVisualStyleBackColor = true;
+			this.button10.Click += new System.EventHandler(this.Button10Click);
 			// 
 			// textBox1
 			// 
@@ -315,6 +343,9 @@ namespace ONG_Manager
 			// comboBox2
 			// 
 			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Items.AddRange(new object[] {
+			"SI",
+			"NO"});
 			this.comboBox2.Location = new System.Drawing.Point(363, 25);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(121, 21);
@@ -332,6 +363,9 @@ namespace ONG_Manager
 			// comboBox1
 			// 
 			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Items.AddRange(new object[] {
+			"CURSO",
+			"TALLER"});
 			this.comboBox1.Location = new System.Drawing.Point(53, 25);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -349,14 +383,186 @@ namespace ONG_Manager
 			// tabPage2
 			// 
 			this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+			this.tabPage2.Controls.Add(this.groupBox7);
+			this.tabPage2.Controls.Add(this.groupBox6);
 			this.tabPage2.Controls.Add(this.groupBox5);
 			this.tabPage2.Controls.Add(this.groupBox4);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(952, 691);
+			this.tabPage2.Size = new System.Drawing.Size(952, 721);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "ALUMNOS / PROFESORADO";
+			// 
+			// groupBox7
+			// 
+			this.groupBox7.Controls.Add(this.tbidprofesor);
+			this.groupBox7.Controls.Add(this.tbdniprofesor);
+			this.groupBox7.Controls.Add(this.button19);
+			this.groupBox7.Controls.Add(this.button20);
+			this.groupBox7.Controls.Add(this.tbapellidoprofesor);
+			this.groupBox7.Controls.Add(this.label7);
+			this.groupBox7.Controls.Add(this.label8);
+			this.groupBox7.Controls.Add(this.label9);
+			this.groupBox7.Location = new System.Drawing.Point(3, 656);
+			this.groupBox7.Name = "groupBox7";
+			this.groupBox7.Size = new System.Drawing.Size(940, 52);
+			this.groupBox7.TabIndex = 36;
+			this.groupBox7.TabStop = false;
+			this.groupBox7.Text = "BUSCAR PROFESORES";
+			// 
+			// tbidprofesor
+			// 
+			this.tbidprofesor.Location = new System.Drawing.Point(146, 19);
+			this.tbidprofesor.Name = "tbidprofesor";
+			this.tbidprofesor.Size = new System.Drawing.Size(143, 20);
+			this.tbidprofesor.TabIndex = 30;
+			// 
+			// tbdniprofesor
+			// 
+			this.tbdniprofesor.Location = new System.Drawing.Point(348, 19);
+			this.tbdniprofesor.Name = "tbdniprofesor";
+			this.tbdniprofesor.Size = new System.Drawing.Size(143, 20);
+			this.tbdniprofesor.TabIndex = 29;
+			// 
+			// button19
+			// 
+			this.button19.Location = new System.Drawing.Point(824, 19);
+			this.button19.Name = "button19";
+			this.button19.Size = new System.Drawing.Size(80, 23);
+			this.button19.TabIndex = 28;
+			this.button19.Text = "CANCELAR";
+			this.button19.UseVisualStyleBackColor = true;
+			this.button19.Click += new System.EventHandler(this.Button19Click);
+			// 
+			// button20
+			// 
+			this.button20.Location = new System.Drawing.Point(738, 19);
+			this.button20.Name = "button20";
+			this.button20.Size = new System.Drawing.Size(80, 23);
+			this.button20.TabIndex = 27;
+			this.button20.Text = "ACEPTAR";
+			this.button20.UseVisualStyleBackColor = true;
+			this.button20.Click += new System.EventHandler(this.Button20Click);
+			// 
+			// tbapellidoprofesor
+			// 
+			this.tbapellidoprofesor.Location = new System.Drawing.Point(576, 19);
+			this.tbapellidoprofesor.Name = "tbapellidoprofesor";
+			this.tbapellidoprofesor.Size = new System.Drawing.Size(143, 20);
+			this.tbapellidoprofesor.TabIndex = 26;
+			// 
+			// label7
+			// 
+			this.label7.Location = new System.Drawing.Point(497, 19);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(73, 23);
+			this.label7.TabIndex = 25;
+			this.label7.Text = "APELLIDO1:";
+			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label8
+			// 
+			this.label8.Location = new System.Drawing.Point(307, 17);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(35, 23);
+			this.label8.TabIndex = 23;
+			this.label8.Text = "DNI:";
+			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label9
+			// 
+			this.label9.Location = new System.Drawing.Point(122, 17);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(29, 23);
+			this.label9.TabIndex = 21;
+			this.label9.Text = "ID:";
+			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// groupBox6
+			// 
+			this.groupBox6.Controls.Add(this.tbidalumno);
+			this.groupBox6.Controls.Add(this.tbdnialumno);
+			this.groupBox6.Controls.Add(this.button8);
+			this.groupBox6.Controls.Add(this.button18);
+			this.groupBox6.Controls.Add(this.tbapellidoalumno);
+			this.groupBox6.Controls.Add(this.label1);
+			this.groupBox6.Controls.Add(this.label5);
+			this.groupBox6.Controls.Add(this.label6);
+			this.groupBox6.Location = new System.Drawing.Point(6, 302);
+			this.groupBox6.Name = "groupBox6";
+			this.groupBox6.Size = new System.Drawing.Size(940, 52);
+			this.groupBox6.TabIndex = 35;
+			this.groupBox6.TabStop = false;
+			this.groupBox6.Text = "BUSCAR ALUMNOS";
+			// 
+			// tbidalumno
+			// 
+			this.tbidalumno.Location = new System.Drawing.Point(146, 19);
+			this.tbidalumno.Name = "tbidalumno";
+			this.tbidalumno.Size = new System.Drawing.Size(143, 20);
+			this.tbidalumno.TabIndex = 30;
+			// 
+			// tbdnialumno
+			// 
+			this.tbdnialumno.Location = new System.Drawing.Point(348, 19);
+			this.tbdnialumno.Name = "tbdnialumno";
+			this.tbdnialumno.Size = new System.Drawing.Size(143, 20);
+			this.tbdnialumno.TabIndex = 29;
+			// 
+			// button8
+			// 
+			this.button8.Location = new System.Drawing.Point(824, 19);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(80, 23);
+			this.button8.TabIndex = 28;
+			this.button8.Text = "CANCELAR";
+			this.button8.UseVisualStyleBackColor = true;
+			this.button8.Click += new System.EventHandler(this.Button8Click);
+			// 
+			// button18
+			// 
+			this.button18.Location = new System.Drawing.Point(738, 19);
+			this.button18.Name = "button18";
+			this.button18.Size = new System.Drawing.Size(80, 23);
+			this.button18.TabIndex = 27;
+			this.button18.Text = "ACEPTAR";
+			this.button18.UseVisualStyleBackColor = true;
+			this.button18.Click += new System.EventHandler(this.Button18Click);
+			// 
+			// tbapellidoalumno
+			// 
+			this.tbapellidoalumno.Location = new System.Drawing.Point(576, 19);
+			this.tbapellidoalumno.Name = "tbapellidoalumno";
+			this.tbapellidoalumno.Size = new System.Drawing.Size(143, 20);
+			this.tbapellidoalumno.TabIndex = 26;
+			// 
+			// label1
+			// 
+			this.label1.Location = new System.Drawing.Point(497, 19);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(73, 23);
+			this.label1.TabIndex = 25;
+			this.label1.Text = "APELLIDO1:";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label5
+			// 
+			this.label5.Location = new System.Drawing.Point(307, 17);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(35, 23);
+			this.label5.TabIndex = 23;
+			this.label5.Text = "DNI:";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label6
+			// 
+			this.label6.Location = new System.Drawing.Point(122, 17);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(29, 23);
+			this.label6.TabIndex = 21;
+			this.label6.Text = "ID:";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// groupBox5
 			// 
@@ -365,7 +571,7 @@ namespace ONG_Manager
 			this.groupBox5.Controls.Add(this.button14);
 			this.groupBox5.Controls.Add(this.button15);
 			this.groupBox5.Controls.Add(this.dgridprofesores);
-			this.groupBox5.Location = new System.Drawing.Point(3, 320);
+			this.groupBox5.Location = new System.Drawing.Point(3, 360);
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.Size = new System.Drawing.Size(940, 290);
 			this.groupBox5.TabIndex = 4;
@@ -511,6 +717,10 @@ namespace ONG_Manager
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
+			this.groupBox7.ResumeLayout(false);
+			this.groupBox7.PerformLayout();
+			this.groupBox6.ResumeLayout(false);
+			this.groupBox6.PerformLayout();
 			this.groupBox5.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgridprofesores)).EndInit();
 			this.groupBox4.ResumeLayout(false);

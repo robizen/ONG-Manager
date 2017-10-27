@@ -50,10 +50,10 @@ namespace ONG_Manager
 			this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.formaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.psicologíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.formaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -96,9 +96,16 @@ namespace ONG_Manager
 			// usuarioToolStripMenuItem
 			// 
 			this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-			this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-			this.usuarioToolStripMenuItem.Text = "Usuarios";
+			this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+			this.usuarioToolStripMenuItem.Text = "Armario";
 			this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.UsuarioToolStripMenuItemClick);
+			// 
+			// formaciónToolStripMenuItem
+			// 
+			this.formaciónToolStripMenuItem.Name = "formaciónToolStripMenuItem";
+			this.formaciónToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+			this.formaciónToolStripMenuItem.Text = "Formación";
+			this.formaciónToolStripMenuItem.Click += new System.EventHandler(this.FormaciónToolStripMenuItemClick);
 			// 
 			// psicologíaToolStripMenuItem
 			// 
@@ -117,13 +124,6 @@ namespace ONG_Manager
 			this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
 			this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
 			this.administraciónToolStripMenuItem.Text = "Administración";
-			// 
-			// formaciónToolStripMenuItem
-			// 
-			this.formaciónToolStripMenuItem.Name = "formaciónToolStripMenuItem";
-			this.formaciónToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-			this.formaciónToolStripMenuItem.Text = "Formación";
-			this.formaciónToolStripMenuItem.Click += new System.EventHandler(this.FormaciónToolStripMenuItemClick);
 			// 
 			// FormMenu
 			// 

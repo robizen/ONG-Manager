@@ -84,12 +84,17 @@ namespace ONG_Manager
 		{
 			SQLiteConnection conn = new SQLiteConnection(strcon);
   			conn.Open();
-  			sql = "select ALUMNOS.ID, ALUMNOS.NOMBRE,ALUMNOS.APELLIDO1,ALUMNOS.APELLIDO2,ALUMNOS.NIF from ALUMNOS INNER JOIN ALUMNOSCURSO ON ALUMNOSCURSO.IDALUMNO = ALUMNOS.ID WHERE ALUMNOSCURSO.IDCURSO = '"+dgridcursos.SelectedRows[0].Cells[0].Value.ToString()+"';";
-  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
-  			SQLiteDataAdapter da3 = new SQLiteDataAdapter(cmd);
-        	DataTable dt3 = new DataTable();
-        	da3.Fill(dt3);
-        	dgridalumnoscurso.DataSource = dt3;
+			sql = "select * from ALUMNOS;";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+        	cmd = new SQLiteCommand(sql, conn);
+        	SQLiteDataAdapter da2 = new SQLiteDataAdapter(cmd);
+        	DataTable dt2 = new DataTable();
+        	da2.Fill(dt2);
+        	conn.Close();
+        	tbapellidoalumno.Text = "";
+        	tbdnialumno.Text = "";
+        	tbidalumno.Text ="";
+        	dgridalumnos.DataSource = dt2;
 		}
 		void Button2Click(object sender, EventArgs e)
 		{
@@ -117,6 +122,96 @@ namespace ONG_Manager
 			this.Close();
 			formaProfeCursos.Show();
 		}
+		
+		void cargaralumnoscurso()
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select ALUMNOS.ID, ALUMNOS.NOMBRE,ALUMNOS.APELLIDO1,ALUMNOS.APELLIDO2,ALUMNOS.NIF from ALUMNOS INNER JOIN ALUMNOSCURSO ON ALUMNOSCURSO.IDALUMNO = ALUMNOS.ID WHERE ALUMNOSCURSO.IDCURSO = '"+dgridcursos.SelectedRows[0].Cells[0].Value.ToString()+"';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			SQLiteDataAdapter da4 = new SQLiteDataAdapter(cmd);
+        	DataTable dt4 = new DataTable();
+        	da4.Fill(dt4);
+        	dgridalumnoscurso.DataSource = dt4;
+        	conn.Close();
+		}
+		void DgridcursosClick(object sender, EventArgs e)
+		{
+			cargaralumnoscurso();
+		}
+		void Button10Click(object sender, EventArgs e)
+		{
+			
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select * from CURSOS where CURSOS.TIPO LIKE '%"+comboBox1.Text+"%' and CURSOS.COMPLETADO LIKE '%"+comboBox2.Text+"%' and CURSOS.NOMBRE LIKE '%"+textBox1.Text+"%';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			SQLiteDataAdapter da1 = new SQLiteDataAdapter(cmd);
+        	DataTable dt1 = new DataTable();
+        	da1.Fill(dt1);
+        	dgridcursos.DataSource = dt1;
+        	conn.Close();
+		}
+		void Button11Click(object sender, EventArgs e)
+		{
+			comboBox1.Text = "";
+			comboBox2.Text = "";
+			textBox1.Text = "";
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select * from CURSOS;";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			SQLiteDataAdapter da1 = new SQLiteDataAdapter(cmd);
+        	DataTable dt1 = new DataTable();
+        	da1.Fill(dt1);
+        	dgridcursos.DataSource = dt1;
+        	conn.Close();
+		}
+		void Button18Click(object sender, EventArgs e)
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+			sql = "select * from ALUMNOS where ALUMNOS.ID LIKE '%"+tbidalumno.Text+"%' and ALUMNOS.NIF LIKE '%"+tbdnialumno.Text+"%' and ALUMNOS.APELLIDO1 LIKE '%"+tbapellidoalumno.Text+"%';";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+        	cmd = new SQLiteCommand(sql, conn);
+        	SQLiteDataAdapter da2 = new SQLiteDataAdapter(cmd);
+        	DataTable dt2 = new DataTable();
+        	da2.Fill(dt2);
+        	dgridalumnos.DataSource = dt2;
+        	conn.Close();
+        	
+		}
+		void Button20Click(object sender, EventArgs e)
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+			sql = "select * from PROFESORES where PROFESORES.ID LIKE '%"+tbidprofesor.Text+"%' and PROFESORES.NIF LIKE '%"+tbdniprofesor.Text+"%' and PROFESORES.APELLIDO1 LIKE '%"+tbapellidoprofesor.Text+"%';";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+        	cmd = new SQLiteCommand(sql, conn);
+        	SQLiteDataAdapter da3 = new SQLiteDataAdapter(cmd);
+        	DataTable dt3 = new DataTable();
+        	da3.Fill(dt3);
+        	dgridprofesores.DataSource = dt3;
+        	conn.Close();
+        	
+		}
+		void Button19Click(object sender, EventArgs e)
+		{
+			
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+			sql = "select * from PROFESORES ;";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+        	cmd = new SQLiteCommand(sql, conn);
+        	SQLiteDataAdapter da3 = new SQLiteDataAdapter(cmd);
+        	DataTable dt3 = new DataTable();
+        	da3.Fill(dt3);
+        	dgridprofesores.DataSource = dt3;
+        	conn.Close();
+        	tbapellidoprofesor.Text = "";
+        	tbdniprofesor.Text = "";
+        	tbidprofesor.Text ="";
+		}	
 		
 		
 		
