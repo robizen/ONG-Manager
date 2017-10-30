@@ -23,6 +23,7 @@ namespace ONG_Manager
 		private System.Windows.Forms.ToolStripMenuItem sociosToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem administraciónToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem formaciónToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem puntoDeInformaciónToolStripMenuItem;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -54,6 +55,7 @@ namespace ONG_Manager
 			this.psicologíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.puntoDeInformaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -61,6 +63,7 @@ namespace ONG_Manager
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.menuToolStripMenuItem,
+			this.puntoDeInformaciónToolStripMenuItem,
 			this.usuarioToolStripMenuItem,
 			this.formaciónToolStripMenuItem,
 			this.psicologíaToolStripMenuItem,
@@ -112,6 +115,7 @@ namespace ONG_Manager
 			this.psicologíaToolStripMenuItem.Name = "psicologíaToolStripMenuItem";
 			this.psicologíaToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
 			this.psicologíaToolStripMenuItem.Text = "Psicología";
+			this.psicologíaToolStripMenuItem.Click += new System.EventHandler(this.PsicologíaToolStripMenuItemClick);
 			// 
 			// sociosToolStripMenuItem
 			// 
@@ -124,6 +128,13 @@ namespace ONG_Manager
 			this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
 			this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
 			this.administraciónToolStripMenuItem.Text = "Administración";
+			// 
+			// puntoDeInformaciónToolStripMenuItem
+			// 
+			this.puntoDeInformaciónToolStripMenuItem.Name = "puntoDeInformaciónToolStripMenuItem";
+			this.puntoDeInformaciónToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
+			this.puntoDeInformaciónToolStripMenuItem.Text = "Punto de Información";
+			this.puntoDeInformaciónToolStripMenuItem.Click += new System.EventHandler(this.PuntoDeInformaciónToolStripMenuItemClick);
 			// 
 			// FormMenu
 			// 

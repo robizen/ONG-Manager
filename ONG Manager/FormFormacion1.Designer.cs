@@ -199,6 +199,7 @@ namespace ONG_Manager
 			this.button9.TabIndex = 36;
 			this.button9.Text = "HOJA DE FIRMAS";
 			this.button9.UseVisualStyleBackColor = true;
+			this.button9.Click += new System.EventHandler(this.Button9Click);
 			// 
 			// button7
 			// 

@@ -56,6 +56,7 @@ namespace ONG_Manager
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button button7;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -120,6 +121,7 @@ namespace ONG_Manager
 			this.button3 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -465,6 +467,7 @@ namespace ONG_Manager
 			// 
 			// groupBox5
 			// 
+			this.groupBox5.Controls.Add(this.button7);
 			this.groupBox5.Controls.Add(this.button6);
 			this.groupBox5.Controls.Add(this.button5);
 			this.groupBox5.Controls.Add(this.button4);
@@ -514,6 +517,7 @@ namespace ONG_Manager
 			this.button3.TabIndex = 4;
 			this.button3.Text = "EDITAR ALUMNO";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.Button3Click);
 			// 
 			// button2
 			// 
@@ -534,6 +538,16 @@ namespace ONG_Manager
 			this.button1.Text = "BUSCAR POR NIF";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// button7
+			// 
+			this.button7.Location = new System.Drawing.Point(6, 87);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(188, 23);
+			this.button7.TabIndex = 18;
+			this.button7.Text = "LIMPIAR CAMPOS";
+			this.button7.UseVisualStyleBackColor = true;
+			this.button7.Click += new System.EventHandler(this.Button7Click);
 			// 
 			// FormAlumnos1
 			// 

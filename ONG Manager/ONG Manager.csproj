@@ -40,6 +40,7 @@
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core">
@@ -86,6 +87,10 @@
     <Compile Include="FormFormacion2.Designer.cs">
       <DependentUpon>FormFormacion2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInform1.cs" />
+    <Compile Include="FormInform1.Designer.cs">
+      <DependentUpon>FormInform1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenu.cs" />
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
@@ -97,6 +102,14 @@
     <Compile Include="FormProfesores2.cs" />
     <Compile Include="FormProfesores2.Designer.cs">
       <DependentUpon>FormProfesores2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPsico1.cs" />
+    <Compile Include="FormPsico1.Designer.cs">
+      <DependentUpon>FormPsico1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPsico2.cs" />
+    <Compile Include="FormPsico2.Designer.cs">
+      <DependentUpon>FormPsico2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUsuario1.cs" />
     <Compile Include="FormUsuario1.Designer.cs">
@@ -129,6 +142,9 @@
     <EmbeddedResource Include="FormFormacion2.resx">
       <DependentUpon>FormFormacion2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInform1.resx">
+      <DependentUpon>FormInform1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfesores2.resx">
       <DependentUpon>FormProfesores2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPsico1.resx">
+      <DependentUpon>FormPsico1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPsico2.resx">
+      <DependentUpon>FormPsico2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario1.resx">
       <DependentUpon>FormUsuario1.cs</DependentUpon>

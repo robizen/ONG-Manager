@@ -49,7 +49,7 @@ namespace ONG_Manager
   				{
   					cargaralumno();
   				}
-  				if(result == DialogResult.No)
+  				if(result == DialogResult.No)	
   				{
   					MessageBox.Show("Entonces, revisa los datos introducidos");
   				}
@@ -64,7 +64,30 @@ namespace ONG_Manager
 			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
 			cmd.ExecuteNonQuery();
 			conn.Close();
+			MessageBox.Show("REGISTRO ALMACENADO CORRECTAMENTE");
 		}
+		
+		void limpiarcampos()
+		{
+				tb0.Text = "";
+				tb1.Text = "";
+				tb2.Text = "";
+				tb3.Text = "";
+				tb4.Text = "";
+				tb5.Text = "";
+				tb6.Text = "";
+				cb1.Text = "";
+				tb7.Text = "";
+				tb8.Text = "";
+				tb9.Text = "";
+				tb10.Text = "";
+				tb11.Text = "";
+				tb12.Text = "";
+				tb13.Text = "";
+				tb14.Text = "";
+		}
+			
+			
 		void cargaralumno()
 		{
 			SQLiteConnection conn = new SQLiteConnection(strcon);
@@ -116,6 +139,21 @@ namespace ONG_Manager
   			{
   				cargaralumno();
   			}
+		}
+		void Button3Click(object sender, EventArgs e)
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+			sql = "UPDATE ALUMNOS SET NOMBRE = '"+tb1.Text+"', APELLIDO1 = '"+tb2.Text+"' , APELLIDO2 = '"+tb3.Text+"', NIF = '"+tb4.Text+"',PAIS = '"+tb5.Text+"',EDAD = '"+tb6.Text+"' ,SEXO = '"+cb1.Text+"' ,TELEFONO1 = '"+tb7.Text+"',TELEFONO2 = '"+tb8.Text+"',EMAIL = '"+tb9.Text+"' ,DIRECCION1 = '"+tb10.Text+"',DIRECCION2 = '"+tb11.Text+"',POBLACION = '"+tb12.Text+"', PROVINCIA = '"+tb13.Text+"', OBSERVACIONES = '"+tb14.Text+"' WHERE ID = '"+tb0.Text+"';";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+			cmd.ExecuteNonQuery();
+			conn.Close();
+			MessageBox.Show("REGISTRO EDITADO CORRECTAMENTE");
+			
+		}
+		void Button7Click(object sender, EventArgs e)
+		{
+			limpiarcampos();
 		}
 	
 		

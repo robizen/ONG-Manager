@@ -49,5 +49,19 @@ namespace ONG_Manager
 				this.ActiveMdiChild.Close();
 			}
 		}
+		void PsicologíaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Limpiarforms();
+			FormPsico1 psicologia1 = new FormPsico1();
+			psicologia1.MdiParent = this;
+			psicologia1.Show();
+		}
+		void PuntoDeInformaciónToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Limpiarforms();
+			FormInform1 informacion1 = new FormInform1();
+			informacion1.MdiParent = this;
+			informacion1.Show();
+		}
 	}
 }
