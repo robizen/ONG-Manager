@@ -87,6 +87,10 @@
     <Compile Include="FormFormacion2.Designer.cs">
       <DependentUpon>FormFormacion2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFormacion3.cs" />
+    <Compile Include="FormFormacion3.Designer.cs">
+      <DependentUpon>FormFormacion3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInform1.cs" />
     <Compile Include="FormInform1.Designer.cs">
       <DependentUpon>FormInform1.cs</DependentUpon>
@@ -141,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormFormacion2.resx">
       <DependentUpon>FormFormacion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFormacion3.resx">
+      <DependentUpon>FormFormacion3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInform1.resx">
       <DependentUpon>FormInform1.cs</DependentUpon>

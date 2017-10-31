@@ -65,3 +65,4 @@ C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormInform1.resources
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormPsico1.resources
 C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug\ONG_Manager.FormPsico2.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormFormacion3.resources

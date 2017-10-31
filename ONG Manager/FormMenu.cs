@@ -63,5 +63,9 @@ namespace ONG_Manager
 			informacion1.MdiParent = this;
 			informacion1.Show();
 		}
+		void SalirToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }

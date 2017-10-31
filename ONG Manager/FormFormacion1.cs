@@ -268,7 +268,7 @@ namespace ONG_Manager
 	        hoja_trabajo.Cells[1,3] = "PROFESOR";
 	        hoja_trabajo.Cells[1,4] = profe;
 	        hoja_trabajo.Cells[1,5] = "FECHA";
-	        hoja_trabajo.Cells[1,6] = hoy;
+	        hoja_trabajo.Cells[1,6] = "   /     /     ";
 	        
 	        
 	        hoja_trabajo.Cells[2,1] = "RELACION DE ASISTENTES:";
@@ -371,7 +371,9 @@ namespace ONG_Manager
 		}
 		void Button7Click(object sender, EventArgs e)
 		{
-		
+			FormFormacion3 ASIGNACION = new FormFormacion3(idcurso, nomcurso);
+			ASIGNACION.MdiParent = this.MdiParent;
+			ASIGNACION.Show();
 		}
 	
 		
