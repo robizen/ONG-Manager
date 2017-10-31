@@ -37,6 +37,7 @@ namespace ONG_Manager
 		private System.Windows.Forms.GroupBox groupBox8;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -82,6 +83,7 @@ namespace ONG_Manager
 			this.groupBox8 = new System.Windows.Forms.GroupBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox8.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -111,6 +113,7 @@ namespace ONG_Manager
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(69, 20);
 			this.textBox4.TabIndex = 10;
+			this.textBox4.Text = "0";
 			// 
 			// textBox3
 			// 
@@ -118,6 +121,7 @@ namespace ONG_Manager
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(69, 20);
 			this.textBox3.TabIndex = 9;
+			this.textBox3.Text = "0";
 			// 
 			// textBox2
 			// 
@@ -125,6 +129,7 @@ namespace ONG_Manager
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(69, 20);
 			this.textBox2.TabIndex = 8;
+			this.textBox2.Text = "0";
 			// 
 			// label6
 			// 
@@ -194,6 +199,7 @@ namespace ONG_Manager
 			this.button1.TabIndex = 1;
 			this.button1.Text = "GUARDAR";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// label24
 			// 
@@ -239,6 +245,7 @@ namespace ONG_Manager
 			this.button4.TabIndex = 35;
 			this.button4.Text = "EXPORTAR EXCEL";
 			this.button4.UseVisualStyleBackColor = true;
+			this.button4.Click += new System.EventHandler(this.Button4Click);
 			// 
 			// button3
 			// 
@@ -248,12 +255,18 @@ namespace ONG_Manager
 			this.button3.TabIndex = 34;
 			this.button3.Text = "VER DATOS";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.Button3Click);
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.dataGridView1.Location = new System.Drawing.Point(6, 40);
+			this.dataGridView1.MultiSelect = false;
 			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(936, 318);
 			this.dataGridView1.TabIndex = 33;
 			// 
@@ -305,6 +318,11 @@ namespace ONG_Manager
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "PUNTO DE INFORMACIÓN";
+			// 
+			// saveFileDialog1
+			// 
+			this.saveFileDialog1.DefaultExt = "xls";
+			this.saveFileDialog1.Filter = "Archivo Excel 2003|*.xls";
 			// 
 			// FormInform1
 			// 

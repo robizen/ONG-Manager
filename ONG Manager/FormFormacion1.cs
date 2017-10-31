@@ -295,6 +295,12 @@ namespace ONG_Manager
 			
 			MessageBox.Show("Exportacion Finalizada");
 		}
+		void Button12Click(object sender, EventArgs e)
+		{
+			FormAlumnos2 asignarcursosalumno = new FormAlumnos2(dgridalumnos.SelectedRows[0].Cells[0].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[2].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[3].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[1].Value.ToString(), dgridalumnos.SelectedRows[0].Cells[4].Value.ToString());
+			asignarcursosalumno.MdiParent = this.MdiParent;
+			asignarcursosalumno.Show();
+		}
 	
 		
 		

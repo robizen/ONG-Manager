@@ -24,6 +24,7 @@ namespace ONG_Manager
 		private System.Windows.Forms.ToolStripMenuItem administraciónToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem formaciónToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem puntoDeInformaciónToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem bancoDeAlimentosToolStripMenuItem;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -50,12 +51,13 @@ namespace ONG_Manager
 			this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.puntoDeInformaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.formaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.psicologíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.puntoDeInformaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.bancoDeAlimentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -67,6 +69,7 @@ namespace ONG_Manager
 			this.usuarioToolStripMenuItem,
 			this.formaciónToolStripMenuItem,
 			this.psicologíaToolStripMenuItem,
+			this.bancoDeAlimentosToolStripMenuItem,
 			this.sociosToolStripMenuItem,
 			this.administraciónToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -95,6 +98,13 @@ namespace ONG_Manager
 			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
 			this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
 			this.salirToolStripMenuItem.Text = "Salir";
+			// 
+			// puntoDeInformaciónToolStripMenuItem
+			// 
+			this.puntoDeInformaciónToolStripMenuItem.Name = "puntoDeInformaciónToolStripMenuItem";
+			this.puntoDeInformaciónToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
+			this.puntoDeInformaciónToolStripMenuItem.Text = "Punto de Información";
+			this.puntoDeInformaciónToolStripMenuItem.Click += new System.EventHandler(this.PuntoDeInformaciónToolStripMenuItemClick);
 			// 
 			// usuarioToolStripMenuItem
 			// 
@@ -129,12 +139,11 @@ namespace ONG_Manager
 			this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
 			this.administraciónToolStripMenuItem.Text = "Administración";
 			// 
-			// puntoDeInformaciónToolStripMenuItem
+			// bancoDeAlimentosToolStripMenuItem
 			// 
-			this.puntoDeInformaciónToolStripMenuItem.Name = "puntoDeInformaciónToolStripMenuItem";
-			this.puntoDeInformaciónToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
-			this.puntoDeInformaciónToolStripMenuItem.Text = "Punto de Información";
-			this.puntoDeInformaciónToolStripMenuItem.Click += new System.EventHandler(this.PuntoDeInformaciónToolStripMenuItemClick);
+			this.bancoDeAlimentosToolStripMenuItem.Name = "bancoDeAlimentosToolStripMenuItem";
+			this.bancoDeAlimentosToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+			this.bancoDeAlimentosToolStripMenuItem.Text = "Banco de Alimentos";
 			// 
 			// FormMenu
 			// 

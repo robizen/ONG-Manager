@@ -59,6 +59,8 @@ namespace ONG_Manager
 			cmd.ExecuteNonQuery();
 			conn.Close();
 			MessageBox.Show("Registro realizado correctamente.");
+			limpiarcampos();
+			
 			
 			
 		}
@@ -88,9 +90,9 @@ namespace ONG_Manager
 			SQLiteConnection conn = new SQLiteConnection(strcon);
   			conn.Open();
   			string fecha1,fecha2;
-  			fecha1 = dateTimePicker1.Value.Year.ToString()+"-"+dateTimePicker1.Value.Month.ToString()+"-"+dateTimePicker1.Value.Day.ToString();
-  			fecha2 = dateTimePicker2.Value.Year.ToString()+"-"+dateTimePicker2.Value.Month.ToString()+"-"+dateTimePicker2.Value.Day.ToString();
-			sql = "select (T1.APELLIDO1 || ' ' || T1.APELLIDO2 ||', ' ||  T1.NOMBRE) AS PSICOLOGO, T2.TIPO, T2.HOMBRES, T2.MUJERES, T2.NINOS AS NIÑOS, T2.NOTAS, T2.FECHA  from PSICOLOGIA AS T2 INNER JOIN PSICOLOGOS AS T1 ON T2.IDPSICOLOGO = T1.ID WHERE T2.FECHA BETWEEN date('"+fecha1+"') AND date('"+fecha2+"');";
+  			fecha1 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+			fecha2 = dateTimePicker2.Value.ToString("yyyy-MM-dd");
+			sql = "select (T1.APELLIDO1 || ' ' || T1.APELLIDO2 ||', ' ||  T1.NOMBRE) AS PSICOLOGO, T2.TIPO, T2.HOMBRES, T2.MUJERES, T2.NINOS AS NIÑOS, T2.NOTAS, T2.FECHA  from PSICOLOGIA AS T2 INNER JOIN PSICOLOGOS AS T1 ON T2.IDPSICOLOGO = T1.ID WHERE T2.FECHA BETWEEN '"+fecha1+"' AND'"+fecha2+"';";
   			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
   			SQLiteDataAdapter da1 = new SQLiteDataAdapter(cmd);
         	DataTable dt1 = new DataTable();

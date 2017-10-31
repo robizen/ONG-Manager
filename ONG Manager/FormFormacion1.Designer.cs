@@ -661,6 +661,7 @@ namespace ONG_Manager
 			this.button12.TabIndex = 3;
 			this.button12.Text = "ASIGNAR CURSOS";
 			this.button12.UseVisualStyleBackColor = true;
+			this.button12.Click += new System.EventHandler(this.Button12Click);
 			// 
 			// button6
 			// 
