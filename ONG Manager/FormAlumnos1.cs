@@ -21,12 +21,16 @@ namespace ONG_Manager
 	{
 		string strcon = "Data Source=ONGMANAGER.db;Version=3;";
 		string sql;
-		public FormAlumnos1()
+		public FormAlumnos1(bool editar, string ideditar)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			if (editar)
+			{
+				cargaralumnoeditar(ideditar);
+			}
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -93,6 +97,36 @@ namespace ONG_Manager
 			SQLiteConnection conn = new SQLiteConnection(strcon);
   			conn.Open();
 			sql = "select * from alumnos where nif ='"+tb4.Text+"';";
+			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+			SQLiteDataReader r = cmd.ExecuteReader();
+			while (r.Read()) {
+				tb0.Text = r[0].ToString();
+				tb1.Text = r[1].ToString();
+				tb2.Text = r[2].ToString();
+				tb3.Text = r[3].ToString();
+				tb4.Text = r[4].ToString();
+				tb5.Text = r[5].ToString();
+				tb6.Text = r[6].ToString();
+				cb1.Text = r[7].ToString();
+				tb7.Text = r[8].ToString();
+				tb8.Text = r[9].ToString();
+				tb9.Text = r[10].ToString();
+				tb10.Text = r[11].ToString();
+				tb11.Text = r[12].ToString();
+				tb12.Text = r[13].ToString();
+				tb13.Text = r[14].ToString();
+				tb14.Text = r[15].ToString();
+			}
+			
+
+		}
+		
+			
+		void cargaralumnoeditar(string idalumnoeditar)
+		{
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+			sql = "select * from alumnos where id ='"+idalumnoeditar+"';";
 			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
 			SQLiteDataReader r = cmd.ExecuteReader();
 			while (r.Read()) {

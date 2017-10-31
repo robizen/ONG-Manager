@@ -48,7 +48,9 @@ namespace ONG_Manager
 		}
 		void Button5Click(object sender, EventArgs e)
 		{
-			FormAlumnos1 formalumno = new FormAlumnos1();
+			bool editar = false;
+			string ideditar = "";
+			FormAlumnos1 formalumno = new FormAlumnos1(editar, ideditar);
 			formalumno.MdiParent = this.MdiParent;
 			this.Close();
 			formalumno.Show();
@@ -107,14 +109,21 @@ namespace ONG_Manager
 		}
 		void Button15Click(object sender, EventArgs e)
 		{
-			FormProfesores1 formprofesor = new FormProfesores1();
-			formprofesor.MdiParent = this.MdiParent;
+			bool editar = false;
+			string ideditar = dgridprofesores.SelectedRows[0].Cells[0].Value.ToString();
+			FormProfesores1 formprofe = new FormProfesores1(editar, ideditar);
+			formprofe.MdiParent = this.MdiParent;
 			this.Close();
-			formprofesor.Show();
+			formprofe.Show();
 		}
 		void Button6Click(object sender, EventArgs e)
 		{
-			
+			bool editar = true;
+			string ideditar = dgridalumnos.SelectedRows[0].Cells[0].Value.ToString();
+			FormAlumnos1 formalumno = new FormAlumnos1(editar, ideditar);
+			formalumno.MdiParent = this.MdiParent;
+			this.Close();
+			formalumno.Show();
 		}
 		void Button13Click(object sender, EventArgs e)
 		{	
@@ -300,6 +309,69 @@ namespace ONG_Manager
 			FormAlumnos2 asignarcursosalumno = new FormAlumnos2(dgridalumnos.SelectedRows[0].Cells[0].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[2].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[3].Value.ToString() ,dgridalumnos.SelectedRows[0].Cells[1].Value.ToString(), dgridalumnos.SelectedRows[0].Cells[4].Value.ToString());
 			asignarcursosalumno.MdiParent = this.MdiParent;
 			asignarcursosalumno.Show();
+		}
+		void Button14Click(object sender, EventArgs e)
+		{
+			bool editar = true;
+			string ideditar = dgridprofesores.SelectedRows[0].Cells[0].Value.ToString();
+			FormProfesores1 formprofe = new FormProfesores1(editar, ideditar);
+			formprofe.MdiParent = this.MdiParent;
+			this.Close();
+			formprofe.Show();
+		}
+		void Button16Click(object sender, EventArgs e)
+		{
+			//CONVERTIR EN PROFESOR
+			
+			int validacion = 0;
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select COUNT(ID) from PROFESORES where nif ='"+dgridalumnos.SelectedRows[0].Cells[4].Value.ToString()+"';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			validacion = Convert.ToInt16(cmd.ExecuteScalar());
+  			if (validacion == 0) 
+  			{
+  				
+  				sql = "insert into PROFESORES (NOMBRE, APELLIDO1, APELLIDO2, NIF, PAIS, EDAD, SEXO, TELEFONO1, TELEFONO2, EMAIL, DIRECCION1, DIRECCION2, POBLACION, PROVINCIA, OBSERVACIONES) SELECT NOMBRE, APELLIDO1, APELLIDO2, NIF, PAIS, EDAD, SEXO, TELEFONO1, TELEFONO2, EMAIL, DIRECCION1, DIRECCION2, POBLACION, PROVINCIA, OBSERVACIONES FROM ALUMNOS WHERE ALUMNOS.ID = '"+dgridalumnos.SelectedRows[0].Cells[0].Value.ToString()+"';";
+  				cmd = new SQLiteCommand(sql, conn);
+  				cmd.ExecuteNonQuery();
+  				MessageBox.Show("DATOS COPIADOS CORRECTAMENTE");
+  				cargainicialdatagrids();
+  				
+  			}else
+  			{
+  				
+  				MessageBox.Show("YA EXISTEN DATOS CON ESE DNI, REVISA EL LISTADO DE PROFESORES.");
+  			}
+  			
+  			
+		}
+		void Button17Click(object sender, EventArgs e)
+		{
+			int validacion = 0;
+			SQLiteConnection conn = new SQLiteConnection(strcon);
+  			conn.Open();
+  			sql = "select COUNT(ID) from ALUMNOS where nif ='"+dgridprofesores.SelectedRows[0].Cells[4].Value.ToString()+"';";
+  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+  			validacion = Convert.ToInt16(cmd.ExecuteScalar());
+  			if (validacion == 0) 
+  			{
+  				
+  				sql = "insert into ALUMNOS (NOMBRE, APELLIDO1, APELLIDO2, NIF, PAIS, EDAD, SEXO, TELEFONO1, TELEFONO2, EMAIL, DIRECCION1, DIRECCION2, POBLACION, PROVINCIA, OBSERVACIONES) SELECT NOMBRE, APELLIDO1, APELLIDO2, NIF, PAIS, EDAD, SEXO, TELEFONO1, TELEFONO2, EMAIL, DIRECCION1, DIRECCION2, POBLACION, PROVINCIA, OBSERVACIONES FROM PROFESORES WHERE PROFESORES.ID = '"+dgridprofesores.SelectedRows[0].Cells[0].Value.ToString()+"';";
+  				cmd = new SQLiteCommand(sql, conn);
+  				cmd.ExecuteNonQuery();
+  				MessageBox.Show("DATOS COPIADOS CORRECTAMENTE");
+  				cargainicialdatagrids();
+  				
+  			}else
+  			{
+  				
+  				MessageBox.Show("YA EXISTEN DATOS CON ESE DNI, REVISA EL LISTADO DE ALUMNOS.");
+  			}
+		}
+		void Button7Click(object sender, EventArgs e)
+		{
+		
 		}
 	
 		

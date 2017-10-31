@@ -53,7 +53,7 @@ namespace ONG_Manager
 			}else
 			{
 				FormMenu Menuform = new FormMenu(perfil);
-				this.Close();
+				this.Hide();
 				Menuform.Show();
 			}
 		}
@@ -63,6 +63,7 @@ namespace ONG_Manager
 			FormMenu Menuform = new FormMenu(perfil);
 				this.Hide();
 				Menuform.Show();
+				
 		}
 		void Button2Click(object sender, EventArgs e)
 		{

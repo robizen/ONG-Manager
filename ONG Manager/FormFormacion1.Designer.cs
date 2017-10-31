@@ -209,6 +209,7 @@ namespace ONG_Manager
 			this.button7.TabIndex = 34;
 			this.button7.Text = "ASIGNAR ALUMNOS";
 			this.button7.UseVisualStyleBackColor = true;
+			this.button7.Click += new System.EventHandler(this.Button7Click);
 			// 
 			// dgridalumnoscurso
 			// 
@@ -587,6 +588,7 @@ namespace ONG_Manager
 			this.button17.TabIndex = 5;
 			this.button17.Text = "CONVERTIR EN ALUMNO";
 			this.button17.UseVisualStyleBackColor = true;
+			this.button17.Click += new System.EventHandler(this.Button17Click);
 			// 
 			// button13
 			// 
@@ -606,6 +608,7 @@ namespace ONG_Manager
 			this.button14.TabIndex = 2;
 			this.button14.Text = "EDITAR DATOS DEL PROFESOR";
 			this.button14.UseVisualStyleBackColor = true;
+			this.button14.Click += new System.EventHandler(this.Button14Click);
 			// 
 			// button15
 			// 
@@ -652,6 +655,7 @@ namespace ONG_Manager
 			this.button16.TabIndex = 4;
 			this.button16.Text = "CONVERTIR EN PROFESOR";
 			this.button16.UseVisualStyleBackColor = true;
+			this.button16.Click += new System.EventHandler(this.Button16Click);
 			// 
 			// button12
 			// 
