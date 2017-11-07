@@ -227,82 +227,13 @@ namespace ONG_Manager
 		}
 		void Button9Click(object sender, EventArgs e)
 		{
-			// HOJA DE FIRMAS
-			//try {
-				
-		 	Microsoft.Office.Interop.Excel.Application aplicacion;
-	        Microsoft.Office.Interop.Excel.Workbook libros_trabajo;
-	        Microsoft.Office.Interop.Excel.Worksheet hoja_trabajo;
-	        aplicacion = new Microsoft.Office.Interop.Excel.Application();
-	        libros_trabajo = aplicacion.Workbooks.Add();
-	        hoja_trabajo = 
-	            (Microsoft.Office.Interop.Excel.Worksheet)libros_trabajo.Worksheets.get_Item(1);
-	        
-	        
-	        string profe = "SIN DATOS";
-	        sql="select (APELLIDO1 || ' ' || APELLIDO2 || ', ' || NOMBRE) AS PROF FROM PROFESORES WHERE PROFESORES.ID = '"+idprofesor+"'";
-			SQLiteConnection con = new SQLiteConnection(strcon); 
-			SQLiteCommand cmd = new SQLiteCommand(sql,con);
-			con.Open();
-			SQLiteDataReader reader = cmd.ExecuteReader();
-			if (reader.HasRows)
-			{
-				while (reader.Read())
-		            {
-				 		profe = reader.GetString(0);
-				 		MessageBox.Show(profe);
-		            }
-				
-				
-			} else
-			{
-				profe = "SIN PROFESOR ASIGNADO";
-				MessageBox.Show(profe);
-			}
-			con.Close();
-	        
-	        string hoy = DateTime.Today.Day.ToString() + "-" + DateTime.Today.Month.ToString() + "-" + DateTime.Today.Year.ToString();
-	        
-	        hoja_trabajo.Cells[1,1] = "CURSO:";
-	        hoja_trabajo.Cells[1,2] = nomcurso;
-	        hoja_trabajo.Cells[1,3] = "PROFESOR";
-	        hoja_trabajo.Cells[1,4] = profe;
-	        hoja_trabajo.Cells[1,5] = "FECHA";
-	        hoja_trabajo.Cells[1,6] = "   /     /     ";
-	        
-	        
-	        hoja_trabajo.Cells[2,1] = "RELACION DE ASISTENTES:";
-	        
-	        hoja_trabajo.Cells[3,1] = "CODIGO ALUMNO:";
-	        hoja_trabajo.Cells[3,2] = "NOMBRE";
-	        hoja_trabajo.Cells[3,3] = "1er APELLIDO";
-	        hoja_trabajo.Cells[3,4] = "2º APELLIDO";
-	        hoja_trabajo.Cells[3,5] = "NIF";
-	        hoja_trabajo.Cells[3,6] = "FIRMA";
-	       	        
-	        for (int i = 0; i < dgridalumnoscurso.Rows.Count ; i++)
-	        {
-	            for (int j = 0; j < 5; j++)
-	            {
-	         
-	                hoja_trabajo.Cells[i + 4, j + 1] = dgridalumnoscurso.Rows[i].Cells[j].Value;
-	            }
-	        }
-	        string fichero = "HOJADEFIRMAS.xls";
-	        
-	        libros_trabajo.SaveAs(fichero, 
-	            Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal);
-	        libros_trabajo.Close(true);
-	        aplicacion.Quit();	
 			
+			idcurso = dgridcursos.SelectedRows[0].Cells[0].Value.ToString();
+			nomcurso = dgridcursos.SelectedRows[0].Cells[2].Value.ToString();
+			idprofesor = dgridcursos.SelectedRows[0].Cells[10].Value.ToString();
+			FormHojadefirmas hojadefirmas = new FormHojadefirmas(idcurso,nomcurso,idprofesor);
+			hojadefirmas.Show();
 			
-			//} catch (Exception ex) {
-				
-				//MessageBox.Show(ex.Message.ToString());
-			//}
-			
-			
-			MessageBox.Show("Exportacion Finalizada");
 		}
 		void Button12Click(object sender, EventArgs e)
 		{

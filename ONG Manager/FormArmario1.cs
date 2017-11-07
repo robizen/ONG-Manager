@@ -30,7 +30,7 @@ namespace ONG_Manager
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			hoy = DateTime.Today.Year.ToString() + "-" + DateTime.Today.Month.ToString() + "-" + DateTime.Today.Day.ToString();
+			hoy = DateTime.Today.Year.ToString("0000") + "-" + DateTime.Today.Month.ToString("00") + "-" + DateTime.Today.Day.ToString("00");
 		
 			
 			//
@@ -101,7 +101,7 @@ namespace ONG_Manager
   			string fecha1,fecha2;
   			fecha1 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 			fecha2 = dateTimePicker2.Value.ToString("yyyy-MM-dd");
-			sql = "select * from ARMARIO WHERE FECHA BETWEEN '"+fecha1+"' AND '"+fecha2+"';";
+			sql = "select * from ARMARIO WHERE FECHA BETWEEN '"+fecha1+"' AND'"+fecha2+"';";
   			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
   			SQLiteDataAdapter da1 = new SQLiteDataAdapter(cmd);
         	DataTable dt1 = new DataTable();

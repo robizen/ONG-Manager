@@ -91,9 +91,17 @@
     <Compile Include="FormFormacion3.Designer.cs">
       <DependentUpon>FormFormacion3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHojadefirmas.cs" />
+    <Compile Include="FormHojadefirmas.Designer.cs">
+      <DependentUpon>FormHojadefirmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInform1.cs" />
     <Compile Include="FormInform1.Designer.cs">
       <DependentUpon>FormInform1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformes.cs" />
+    <Compile Include="FormInformes.Designer.cs">
+      <DependentUpon>FormInformes.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenu.cs" />
     <Compile Include="FormMenu.Designer.cs">
@@ -149,8 +157,14 @@
     <EmbeddedResource Include="FormFormacion3.resx">
       <DependentUpon>FormFormacion3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHojadefirmas.resx">
+      <DependentUpon>FormHojadefirmas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInform1.resx">
       <DependentUpon>FormInform1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformes.resx">
+      <DependentUpon>FormInformes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>

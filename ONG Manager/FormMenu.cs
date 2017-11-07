@@ -67,5 +67,12 @@ namespace ONG_Manager
 		{
 			Application.Exit();
 		}
+		void InformesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Limpiarforms();
+			FormInformes informes1 = new FormInformes();
+			informes1.MdiParent = this;
+			informes1.Show();
+		}
 	}
 }
