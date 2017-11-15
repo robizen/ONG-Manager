@@ -74,5 +74,17 @@ namespace ONG_Manager
 			informes1.MdiParent = this;
 			informes1.Show();
 		}
+		void FormMenuLoad(object sender, EventArgs e)
+		{
+	
+		}
+		void FormMenuFormClosed(object sender, FormClosedEventArgs e)
+		{
+			Application.Exit();
+		}
+		void BancoDeAlimentosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+	
+		}
 	}
 }

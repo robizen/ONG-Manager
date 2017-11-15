@@ -68,3 +68,5 @@ C:\Users\robiz\Documents\SharpDevelop Projects\ONG-Manager\ONG Manager\obj\Debug
 X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormFormacion3.resources
 X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormInformes.resources
 X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormHojadefirmas.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormBanco1.resources
+X:\ROBERTO\SD\ONG MANAGER\ONG Manager\obj\Debug\ONG_Manager.FormBanco2.resources

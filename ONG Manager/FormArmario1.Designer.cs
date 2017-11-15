@@ -79,16 +79,8 @@ namespace ONG_Manager
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.GroupBox groupBox8;
-		private System.Windows.Forms.DateTimePicker dateTimePicker2;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Label label24;
-		private System.Windows.Forms.Label label23;
 		private System.Windows.Forms.TextBox tbvoluntario;
 		private System.Windows.Forms.Label label25;
 		
@@ -114,14 +106,6 @@ namespace ONG_Manager
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox8 = new System.Windows.Forms.GroupBox();
-			this.label24 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -191,8 +175,6 @@ namespace ONG_Manager
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
-			this.groupBox8.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox5.SuspendLayout();
 			this.groupBox6.SuspendLayout();
 			this.groupBox7.SuspendLayout();
@@ -203,7 +185,6 @@ namespace ONG_Manager
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.groupBox8);
 			this.groupBox1.Controls.Add(this.button2);
 			this.groupBox1.Controls.Add(this.button1);
 			this.groupBox1.Controls.Add(this.groupBox5);
@@ -214,90 +195,6 @@ namespace ONG_Manager
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "ROPERO";
-			// 
-			// groupBox8
-			// 
-			this.groupBox8.Controls.Add(this.label24);
-			this.groupBox8.Controls.Add(this.label23);
-			this.groupBox8.Controls.Add(this.dateTimePicker2);
-			this.groupBox8.Controls.Add(this.dateTimePicker1);
-			this.groupBox8.Controls.Add(this.button4);
-			this.groupBox8.Controls.Add(this.button3);
-			this.groupBox8.Controls.Add(this.dataGridView1);
-			this.groupBox8.Location = new System.Drawing.Point(12, 444);
-			this.groupBox8.Name = "groupBox8";
-			this.groupBox8.Size = new System.Drawing.Size(933, 268);
-			this.groupBox8.TabIndex = 33;
-			this.groupBox8.TabStop = false;
-			this.groupBox8.Text = "EXPORTACION DE DATOS";
-			// 
-			// label24
-			// 
-			this.label24.Location = new System.Drawing.Point(361, 11);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(55, 23);
-			this.label24.TabIndex = 39;
-			this.label24.Text = "HASTA:";
-			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label23
-			// 
-			this.label23.Location = new System.Drawing.Point(149, 11);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(55, 23);
-			this.label23.TabIndex = 38;
-			this.label23.Text = "DESDE:";
-			this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// dateTimePicker2
-			// 
-			this.dateTimePicker2.CustomFormat = "";
-			this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker2.Location = new System.Drawing.Point(419, 14);
-			this.dateTimePicker2.Name = "dateTimePicker2";
-			this.dateTimePicker2.Size = new System.Drawing.Size(120, 20);
-			this.dateTimePicker2.TabIndex = 37;
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.CustomFormat = "";
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker1.Location = new System.Drawing.Point(210, 14);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(120, 20);
-			this.dateTimePicker1.TabIndex = 36;
-			// 
-			// button4
-			// 
-			this.button4.Location = new System.Drawing.Point(771, 11);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(156, 23);
-			this.button4.TabIndex = 35;
-			this.button4.Text = "EXPORTAR EXCEL";
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.Location = new System.Drawing.Point(600, 11);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(156, 23);
-			this.button3.TabIndex = 34;
-			this.button3.Text = "VER DATOS";
-			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.Button3Click);
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.AllowUserToAddRows = false;
-			this.dataGridView1.AllowUserToDeleteRows = false;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.dataGridView1.Location = new System.Drawing.Point(6, 40);
-			this.dataGridView1.MultiSelect = false;
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(921, 218);
-			this.dataGridView1.TabIndex = 33;
 			// 
 			// button2
 			// 
@@ -990,8 +887,6 @@ namespace ONG_Manager
 			this.Text = "FormArmario1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox8.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.groupBox5.ResumeLayout(false);
 			this.groupBox5.PerformLayout();
 			this.groupBox6.ResumeLayout(false);

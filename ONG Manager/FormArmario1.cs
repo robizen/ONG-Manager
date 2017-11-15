@@ -89,29 +89,7 @@ namespace ONG_Manager
 		{
 			minregistro();
 		}
-		void Button3Click(object sender, EventArgs e)
-		{
-			cargardatos();
-		}
-		
-		void cargardatos()
-		{	
-			SQLiteConnection conn = new SQLiteConnection(strcon);
-  			conn.Open();
-  			string fecha1,fecha2;
-  			fecha1 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-			fecha2 = dateTimePicker2.Value.ToString("yyyy-MM-dd");
-			sql = "select * from ARMARIO WHERE FECHA BETWEEN '"+fecha1+"' AND'"+fecha2+"';";
-  			SQLiteCommand cmd = new SQLiteCommand(sql, conn);
-  			SQLiteDataAdapter da1 = new SQLiteDataAdapter(cmd);
-        	DataTable dt1 = new DataTable();
-        	da1.Fill(dt1);
-        	dataGridView1.DataSource = dt1;
-        	
-			
-		}
-		
-		
+
 		
 		
 		

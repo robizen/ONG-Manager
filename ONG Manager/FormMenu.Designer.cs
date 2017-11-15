@@ -58,8 +58,8 @@ namespace ONG_Manager
 			this.psicologíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bancoDeAlimentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -136,6 +136,7 @@ namespace ONG_Manager
 			this.bancoDeAlimentosToolStripMenuItem.Name = "bancoDeAlimentosToolStripMenuItem";
 			this.bancoDeAlimentosToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
 			this.bancoDeAlimentosToolStripMenuItem.Text = "Banco de Alimentos";
+			this.bancoDeAlimentosToolStripMenuItem.Click += new System.EventHandler(this.BancoDeAlimentosToolStripMenuItemClick);
 			// 
 			// sociosToolStripMenuItem
 			// 
@@ -143,18 +144,18 @@ namespace ONG_Manager
 			this.sociosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
 			this.sociosToolStripMenuItem.Text = "Socios";
 			// 
-			// administraciónToolStripMenuItem
-			// 
-			this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
-			this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
-			this.administraciónToolStripMenuItem.Text = "Administración";
-			// 
 			// informesToolStripMenuItem
 			// 
 			this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
 			this.informesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
 			this.informesToolStripMenuItem.Text = "Informes";
 			this.informesToolStripMenuItem.Click += new System.EventHandler(this.InformesToolStripMenuItemClick);
+			// 
+			// administraciónToolStripMenuItem
+			// 
+			this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
+			this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+			this.administraciónToolStripMenuItem.Text = "Administración";
 			// 
 			// FormMenu
 			// 
@@ -166,6 +167,7 @@ namespace ONG_Manager
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "FormMenu";
 			this.Text = "FormMenu";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMenuFormClosed);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
