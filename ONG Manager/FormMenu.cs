@@ -84,7 +84,10 @@ namespace ONG_Manager
 		}
 		void BancoDeAlimentosToolStripMenuItemClick(object sender, EventArgs e)
 		{
-	
+			Limpiarforms();
+			FormBanco1 Banco1 = new FormBanco1();
+			Banco1.MdiParent = this;
+			Banco1.Show();
 		}
 	}
 }

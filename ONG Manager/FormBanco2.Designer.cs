@@ -78,6 +78,7 @@ namespace ONG_Manager
 			this.button1.TabIndex = 0;
 			this.button1.Text = "ALMACENAR CAMBIOS";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// DGBanco1
 			// 
@@ -100,6 +101,7 @@ namespace ONG_Manager
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
 			this.Text = "FormBanco2";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.DGBanco1)).EndInit();

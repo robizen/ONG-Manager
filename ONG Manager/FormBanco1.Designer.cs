@@ -44,17 +44,17 @@ namespace ONG_Manager
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.STOCK = new System.Windows.Forms.DataGridView();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.SALIDAS = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.STOCK = new System.Windows.Forms.DataGridView();
 			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.STOCK)).BeginInit();
 			this.groupBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.SALIDAS)).BeginInit();
+			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.STOCK)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -69,6 +69,47 @@ namespace ONG_Manager
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "BANCO DE ALIMENTOS";
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(416, 336);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(128, 23);
+			this.button2.TabIndex = 3;
+			this.button2.Text = ">>>>>>";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(416, 19);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(128, 23);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "EDITAR STOCK";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.SALIDAS);
+			this.groupBox3.Location = new System.Drawing.Point(550, 60);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(404, 617);
+			this.groupBox3.TabIndex = 1;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "SALIDAS";
+			// 
+			// SALIDAS
+			// 
+			this.SALIDAS.AllowUserToAddRows = false;
+			this.SALIDAS.AllowUserToDeleteRows = false;
+			this.SALIDAS.AllowUserToResizeRows = false;
+			this.SALIDAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.SALIDAS.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.SALIDAS.Location = new System.Drawing.Point(6, 19);
+			this.SALIDAS.Name = "SALIDAS";
+			this.SALIDAS.Size = new System.Drawing.Size(388, 592);
+			this.SALIDAS.TabIndex = 0;
 			// 
 			// groupBox2
 			// 
@@ -93,46 +134,6 @@ namespace ONG_Manager
 			this.STOCK.Size = new System.Drawing.Size(388, 592);
 			this.STOCK.TabIndex = 0;
 			// 
-			// groupBox3
-			// 
-			this.groupBox3.Controls.Add(this.SALIDAS);
-			this.groupBox3.Location = new System.Drawing.Point(550, 60);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(404, 617);
-			this.groupBox3.TabIndex = 1;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "SALIDAS";
-			// 
-			// SALIDAS
-			// 
-			this.SALIDAS.AllowUserToAddRows = false;
-			this.SALIDAS.AllowUserToDeleteRows = false;
-			this.SALIDAS.AllowUserToResizeRows = false;
-			this.SALIDAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.SALIDAS.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.SALIDAS.Location = new System.Drawing.Point(6, 19);
-			this.SALIDAS.Name = "SALIDAS";
-			this.SALIDAS.Size = new System.Drawing.Size(388, 592);
-			this.SALIDAS.TabIndex = 0;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(416, 19);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(128, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "EDITAR STOCK";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(416, 336);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(128, 23);
-			this.button2.TabIndex = 3;
-			this.button2.Text = ">>>>>>";
-			this.button2.UseVisualStyleBackColor = true;
-			// 
 			// FormBanco1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,10 +149,10 @@ namespace ONG_Manager
 			this.Text = "FormBanco1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.STOCK)).EndInit();
 			this.groupBox3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.SALIDAS)).EndInit();
+			this.groupBox2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.STOCK)).EndInit();
 			this.ResumeLayout(false);
 
 		}
